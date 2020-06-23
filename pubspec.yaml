@@ -9,11 +9,10 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  google_fonts: ^1.1.0
   flutter:
     sdk: flutter
-
-  intl_phone_number_input: ^0.4.5
+  google_fonts: ^1.1.0
+  pin_code_text_field: ^1.6.0
 
   cupertino_icons: ^0.1.3
 
