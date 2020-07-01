@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       home: Scaffold(
+        resizeToAvoidBottomPadding: false,
         body: EnterPhoneNumber(),
       ),
     );
