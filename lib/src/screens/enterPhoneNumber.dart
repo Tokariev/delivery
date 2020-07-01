@@ -63,9 +63,6 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 160.0),
                   child: OutlineButton(
-                    //highlightedBorderColor: Colors.green,
-                    // shape: new RoundedRectangleBorder(
-                    //    borderRadius: new BorderRadius.circular(30.0)),
                     child: Text('NEXT'),
                     onPressed: () {
                       //TODO next screen
