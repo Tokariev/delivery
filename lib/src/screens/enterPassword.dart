@@ -9,7 +9,7 @@ class EnterPassScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFF0E0E0E),
         body: SafeArea(
           child: Container(
             child: Row(
