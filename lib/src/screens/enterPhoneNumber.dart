@@ -8,8 +8,6 @@ class EnterPhoneNumber extends StatefulWidget {
 }
 
 class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
-  bool displayButton = false;
-
   @override
   void setState(fn) {
     super.setState(fn);
@@ -24,7 +22,7 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
           children: <Widget>[
             Padding(
               padding:
-                  const EdgeInsets.only(left: 16.0, right: 32.0, top: 180.0),
+                  const EdgeInsets.only(left: 16.0, right: 32.0, top: 140.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
@@ -32,7 +30,7 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
                   Text(
                     "Welcome",
                     style: TextStyle(
-                      fontSize: 48.0,
+                      fontSize: 40.0,
                     ),
                   ),
                 ],
@@ -40,7 +38,7 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
             ),
             Padding(
               padding:
-                  const EdgeInsets.only(top: 200.0, left: 40.0, right: 40.0),
+                  const EdgeInsets.only(top: 140.0, left: 40.0, right: 40.0),
               child: InternationalPhoneNumberInput(
                 searchBoxDecoration: InputDecoration(
                   labelText: "Please Enter your Phone Number",
@@ -48,27 +46,22 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
                 countries: ["DE", "UA", "RU", "TR"],
                 inputBorder: OutlineInputBorder(),
                 onInputValidated: (value) {
-                  setState(() {
-                    displayButton = value;
-                  });
+                  setState(() {});
                 },
                 onInputChanged: (PhoneNumber number) {
                   print(number.phoneNumber);
                 },
               ),
             ),
-            Visibility(
-                visible: displayButton,
-                maintainState: displayButton,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 160.0),
-                  child: OutlineButton(
-                    child: Text('NEXT'),
-                    onPressed: () {
-                      //TODO next screen
-                    },
-                  ),
-                ))
+            Padding(
+              padding: const EdgeInsets.only(top: 200.0),
+              child: OutlineButton(
+                child: Text('NEXT'),
+                onPressed: () {
+                  //TODO next screen
+                },
+              ),
+            )
           ],
         ),
       )),
