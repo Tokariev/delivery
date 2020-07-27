@@ -37,13 +37,13 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
               ),
             ),
             Padding(
+              padding: const EdgeInsets.only(top: 130.0),
+              child: Text('Enter Your Phone Number'),
+            ),
+            Padding(
               padding:
-                  const EdgeInsets.only(top: 140.0, left: 40.0, right: 40.0),
-              child: InternationalPhoneNumberInput(
-                searchBoxDecoration: InputDecoration(
-                  labelText: "Please Enter your Phone Number",
-                ),
-                countries: ["DE", "UA", "RU", "TR"],
+                  const EdgeInsets.only(top: 5.0, left: 40.0, right: 40.0),
+              child: InternationalPhoneNumberInput(countries: ["DE", "UA", "RU", "TR"],
                 inputBorder: OutlineInputBorder(),
                 onInputValidated: (value) {
                   setState(() {});
