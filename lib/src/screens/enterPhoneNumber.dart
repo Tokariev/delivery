@@ -42,7 +42,7 @@ class _EnterPhoneNumberState extends State<EnterPhoneNumber> {
             ),
             Padding(
               padding:
-                  const EdgeInsets.only(top: 5.0, left: 40.0, right: 40.0),
+                  const EdgeInsets.only(top: 15.0, left: 40.0, right: 40.0),
               child: InternationalPhoneNumberInput(countries: ["DE", "UA", "RU", "TR"],
                 inputBorder: OutlineInputBorder(),
                 onInputValidated: (value) {
