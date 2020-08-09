@@ -30,12 +30,14 @@ class EnterName extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     top: 100.0, left: 50.0, right: 50.0),
                 child: TextFormField(
+                  textAlign: TextAlign.center,
                   decoration: const InputDecoration(hintText: 'Name'),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30.0, left: 50.0, right: 50.0),
                 child: TextFormField(
+                  textAlign: TextAlign.center,
                   decoration: const InputDecoration(hintText: 'Surname'),
                 ),
               ),
