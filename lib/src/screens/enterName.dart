@@ -18,7 +18,7 @@ class EnterName extends StatelessWidget {
                   mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
                     Text(
-                      "Personal Data",
+                      'Personal Data',
                       style: TextStyle(
                         fontSize: 40.0,
                       ),
@@ -27,18 +27,23 @@ class EnterName extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(
-                    top: 100.0, left: 50.0, right: 50.0),
+                padding: const EdgeInsets.only(top: 100.0, left: 50.0, right: 50.0),
+                child: Text('Name'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 5.0, left: 50.0, right: 50.0),
                 child: TextFormField(
                   textAlign: TextAlign.center,
-                  decoration: const InputDecoration(hintText: 'Name'),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30.0, left: 50.0, right: 50.0),
+                child: Text('Surname'),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 5.0, left: 50.0, right: 50.0),
                 child: TextFormField(
                   textAlign: TextAlign.center,
-                  decoration: const InputDecoration(hintText: 'Surname'),
                 ),
               ),
               Padding(
